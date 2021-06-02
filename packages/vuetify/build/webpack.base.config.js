@@ -75,7 +75,10 @@ module.exports = {
       typescript: {
         configFile: resolve('../tsconfig.checks.json'),
         mode: 'write-references'
-      }
+      },
+      logger: {
+        devServer: false,
+      },
     }),
   ],
   performance: {
