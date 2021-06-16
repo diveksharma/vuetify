@@ -72,9 +72,10 @@ module.exports = {
       clearConsole: true
     }),
     new ForkTsCheckerWebpackPlugin({
+      logger: { devServer: false },
       typescript: {
         configFile: resolve('../tsconfig.checks.json'),
-        mode: 'write-references'
+        mode: 'write-references',
       }
     }),
   ],
